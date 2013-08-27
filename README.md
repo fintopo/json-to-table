@@ -10,7 +10,7 @@ jQuery
 
 json-to-table.js を読み込みます。
 
->  <script src="json-to-table.js"></script>
+>  &lt;script src="json-to-table.js"&gt;&lt;/script&gt;
 
 json2table を呼び出します。
 引数でオブジェクトを渡すとテーブルのjQueryオブジェクトを返します。
