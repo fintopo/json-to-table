@@ -2,15 +2,15 @@
 
 JSONをTable化する関数
 
-# 使用ライブラリ
+## 使用ライブラリ
 
 jQuery
 
-# サイト
+## サイト
 
 [http://www.fintopo.jp/json-to-table/](http://www.fintopo.jp/json-to-table/)
 
-# ライセンス
+## ライセンス
 
 MIT License
 
