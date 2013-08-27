@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>json-to-table - fintopo</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="lib/json2.js"></script>
+  <script src="json-to-table.js"></script>
+  <script type='text/javascript'>
+	$(function(){
+	  $('#jsbtn_transfer').click(function(){
+        var json = JSON.parse($('#jsinput_json').val());
+	    var $table = json2table(json);
+	    $table.attr('border', '1');
+        $('#js_result').html($table);
+	  });
+	});
+  </script>
+</head>
+<body>
+  <h1>fintopo/json-to-table</h1>
+  <div>
+	<p>下のtextareaにJSON文字列をペーストして、「変換」ボタンをクリックしてください。</p>
+  </div>
+  <div>
+	<textarea id="jsinput_json" style="width: 300px; height: 200px;">[
+  {"name": "鈴木", "points": "85"}, 
+  {"name": "斉藤", "points": "98"}, 
+  {"name": "高橋", "points": "72"}
+]</textarea>
+  </div>
+  <div>
+	<button id="jsbtn_transfer">変換</button>
+  </div>
+  <div id="js_result"></div>
+</body>
+</html>
